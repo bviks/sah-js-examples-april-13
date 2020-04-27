@@ -50,3 +50,31 @@ if (age < 18) {
     console.log('Old enough to drive')}
 
  console.log('This is after the if')    
+
+ let colors = ['orange', 'magenta', 'lime', 'yellow', 'cyan']
+
+ $('#box-container').append('<div class="box"></div>')
+ $('.box:last-child').css('background', colors[0])
+ $('#box-container').append('<div class="box"></div>')
+ $('.box:last-child').css('background', colors[1])
+ $('#box-container').append('<div class="box"></div>')
+ $('.box:last-child').css('background', colors[2])
+ $('#box-container').append('<div class="box"></div>')
+ $('.box:last-child').css('background', colors[3])
+ $('#box-container').append('<div class="box"></div>')
+ $('.box:last-child').css('background', colors[4])
+ $('#box-container').append('<div class="box"></div>')
+ $('.box:last-child').css('background', colors[5])
+
+ colors.push('purple')
+
+ colors.forEach((color)=>{
+    $('#box-container').append('<div class="box"></div>')
+    $('.box:last-child').css('background', color)
+ })
+
+ for(let i=0; i<100; i=i+1) {
+     console.log(i);
+ }
+
+
